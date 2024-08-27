@@ -1,0 +1,13 @@
+style={{
+  backgroundColor: emailNotValid ? 'red' : '#d1d5db'
+}}
+
+className={emailNotValid ? 'invalid' : undefined}
+
+// ===== тут ошибка, потому-что className попытается
+присвоить className = false, а такого класса быть не может
+className={emailNotValid && 'invalid'}
+
+// ==========================
+
+className={`label ${emailNotValid ? 'invalid' : ''}`}
