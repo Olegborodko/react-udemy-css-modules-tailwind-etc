@@ -20,3 +20,11 @@ const Input = styled.input`
     handleInputChange('password', event.target.value)
   }
 />
+
+// styled-components conditionally
+
+color: ${({ invalid }) => invalid ? '#f87171' : '#6b7280'};
+
+<Label invalid={emailNotValid}>Email</Label>
+
+// что-бы не конфликтовать с втоенными props часто обозначают свои props вот так $invalid через знак доллара

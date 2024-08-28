@@ -15,14 +15,14 @@ const Label = styled.label`
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #6b7280;
+  color: ${({ $invalid }) => $invalid ? '#f87171' : '#6b7280'};
 `;
 
 const Input = styled.input`
   width: 100%;
   padding: 0.75rem 1rem;
   line-height: 1.5;
-  background-color: #d1d5db;
+  background-color: ${({ $invalid }) => $invalid ? 'red' : '#d1d5db'};
   color: #374151;
   border: 1px solid transparent;
   border-radius: 0.25rem;
@@ -53,14 +53,12 @@ export default function AuthInputs() {
     <div id="auth-inputs">
       <ControlContainer>
         <p>
-          <Label>Email</Label>
+          <Label $invalid={emailNotValid}>Email</Label>
           <Input
             type="email"
             className={emailNotValid ? 'invalid' : undefined}
             onChange={(event) => handleInputChange('email', event.target.value)}
-            style={{
-              backgroundColor: emailNotValid ? 'red' : '#d1d5db'
-            }}
+            $invalid={emailNotValid}
           />
         </p>
         <p>
