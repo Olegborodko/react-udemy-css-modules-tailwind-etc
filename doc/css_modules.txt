@@ -1,4 +1,5 @@
-import logo from '../assets/logo.png';
+Header.module.css
+
 import headerClass from './Header.module.css';
 
 export default function Header() {
@@ -10,3 +11,7 @@ export default function Header() {
     </header>
   );
 }
+
+по итогу это headerClass.paragraph создаст класс _paragraph_2rupt_28
+
+и Header.module.css будет работать только для Header компонента
