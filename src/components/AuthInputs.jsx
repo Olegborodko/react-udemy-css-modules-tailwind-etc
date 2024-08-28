@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { styled } from 'styled-components';
 
+import Button from './Button';
+
 const ControlContainer = styled.div`
   display: flex;
   flex-direction: column;
