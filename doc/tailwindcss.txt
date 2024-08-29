@@ -24,3 +24,21 @@ content: [
 
 4. устанавливаем плагин Tailwind CSS IntelliSense
 в vscode
+
+5. так можно обьявить font-title
+theme: {
+  extend: {
+    fontFamily: {
+      title: ['"Pacifico"', 'cursive']
+    }
+  },
+},
+
+и теперь его можна использовать
+<h1 className="font-title">ReactArt</h1>
+
+сам font нужно подключить через css или index.html
+<link
+  href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+  rel="stylesheet"
+/>
