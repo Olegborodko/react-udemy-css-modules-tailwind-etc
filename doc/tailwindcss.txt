@@ -1,0 +1,26 @@
+installing
+https://tailwindcss.com/docs/guides/vite
+
+1. 
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+создается файл конфигурации
+
+2.
+, меняем в нем
+
+content: [
+  "./index.html",
+  "./src/**/*.{js,ts,jsx,tsx}",
+],
+
+3. добавляем в css эти строки
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+на этом этапе tailwindcss уже подключен
+
+4. устанавливаем плагин Tailwind CSS IntelliSense
+в vscode
