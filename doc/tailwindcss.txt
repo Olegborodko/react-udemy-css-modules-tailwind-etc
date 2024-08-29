@@ -42,3 +42,9 @@ theme: {
   href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
   rel="stylesheet"
 />
+
+6. так например можно менять размер текста на разных расширениях, устройствах
+<h1 className="text-xl md:text-4xl">text</h1>
+
+7. так можно объявить hover, и по такому-же принцыпу focus
+return <button className="hover:bg-amber-50" {...props}>{children}</button>
