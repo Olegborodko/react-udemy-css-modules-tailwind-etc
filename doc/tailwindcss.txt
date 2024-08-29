@@ -48,3 +48,9 @@ theme: {
 
 7. так можно объявить hover, и по такому-же принцыпу focus
 return <button className="hover:bg-amber-50" {...props}>{children}</button>
+
+8. width 100% но не больше чем определенная длинна
+w-full max-w-sm
+
+9. залить градиент
+"bg-gradient-to-b from-stone-700 to-stone-800"
