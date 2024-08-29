@@ -1,4 +1,4 @@
-installing
+installing tailwindcss
 https://tailwindcss.com/docs/guides/vite
 
 1. 
